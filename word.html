@@ -1,0 +1,36 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+
+		var word;
+		var def;
+		var results = "";
+
+		$.get('http://api.urbandictionary.com/v0/random',function (data,status) {
+	    	if(status === 'success'){
+	    		console.log(data);
+	    		$("#word").html(data.list[1].word);
+	    		$("#definition").html(data.list[1].definition);
+	    		//alert(data.list[0].word);
+	    		//alert(data.list[0].definition);
+
+		    	for(i = 0; i < results.length; i++){
+		    		
+		    	}
+	    	}
+	    	else{
+	    		console.log(status);
+	    	}
+        });
+     
+	});
+
+	</script>
+</head>
+<body>
+	<h1 id="word">The word might be here?</h1>
+	<p id="definition">definition goes here</p>
+</body>
+</html>

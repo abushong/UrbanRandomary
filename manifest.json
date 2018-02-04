@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+
+	"name": "Daily Slang Plugin",
+	"description": "This extension will show a random word of the day from Urban Dictinoary",
+	"version": "1.0",
+
+	"permissions": [
+		"activeTab"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["http://www.google.com/", "https://www.google.com/"],
+			"css": ["wordstyles.css"],
+			"js": ["jquery-3.2.1.min.js","add-to-page.js"]
+		}
+	],
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "word.html",
+		"default_title": "Urban Randomary"
+	}
+}

@@ -1,0 +1,27 @@
+.word-container{
+	width: 400px;
+	position: absolute;
+	left: calc(50% - 210px);
+	top: 0;
+	z-index: 999;
+	padding: 10px 10px 0 10px;
+	margin-top: 10px;
+	background-color: linen;
+	border-radius: 5px;
+}
+
+.word{
+
+}
+
+.wordDef{
+	font-size: 1em;
+}
+
+.logo{
+	margin-top: 20px;
+	font-size: .75em;
+	font-family: monaco;
+	color: silver;
+	text-align: right;
+}
